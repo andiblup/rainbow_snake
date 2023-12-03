@@ -11,7 +11,7 @@ class Scoreboard(Turtle):
         super().__init__()
         self.score = 0
         self.hideturtle()
-        self.goto(0, 410)
+        self.goto(0, 250)
         self.color("purple")
         #self.write("Score: " + str(self.score), False, "center", ('Arial', 16, 'normal'))
     
