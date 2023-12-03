@@ -15,7 +15,7 @@ mainloop = True
 while mainloop:
     winsound.PlaySound('mainTheme.wav', winsound.SND_ASYNC)
     screen = Screen()
-    screen.setup(width=900, height=900)
+    screen.setup(width=900, height=600)
     screen.bgcolor("black")
     screen.title("Ultimate Snake")
     screen.tracer(0)
@@ -68,7 +68,7 @@ while mainloop:
             scoreboard.set_score_plus()
         
         # Detect collision with wall
-        if snake.head.xcor() > 440 or snake.head.xcor() < -440 or snake.head.ycor() > 440 or snake.head.ycor() < -440:
+        if snake.head.xcor() > 440 or snake.head.xcor() < -440 or snake.head.ycor() > 300 or snake.head.ycor() < -290:
             gameloop = False
             scoreboard.game_over()
         
